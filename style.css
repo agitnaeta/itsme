@@ -1,0 +1,95 @@
+.background-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1; }
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  height: 300px;
+  margin-top: 150px; }
+
+.flex-columns {
+  flex-direction: column; }
+
+.flex-item {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center; }
+  .flex-item.flex-left {
+    width: 80%;
+    text-align: left; }
+    .flex-item.flex-left .flex-item-list {
+      cursor: pointer;
+      min-height: 10mm;
+      background-color: rgba(251, 251, 251, 0.272);
+      color: white;
+      font: 0.1rem sans-serif;
+      -webkit-border-top-left-radius: 1rem;
+      -webkit-border-bottom-left-radius: 1rem;
+      -moz-border-radius-topleft: 1rem;
+      -moz-border-radius-bottomleft: 1rem;
+      border-top-left-radius: 1rem;
+      border-bottom-left-radius: 1rem;
+      font-size: x-large; }
+      .flex-item.flex-left .flex-item-list:hover {
+        background-color: rgba(251, 251, 251, 0.462); }
+      .flex-item.flex-left .flex-item-list h3 {
+        padding: 1rem; }
+        .flex-item.flex-left .flex-item-list h3 a {
+          color: white;
+          text-decoration: none; }
+  .flex-item.flex-header {
+    width: 40%;
+    display: flex; }
+    .flex-item.flex-header img {
+      margin-top: 100px;
+      height: 100px;
+      width: 100px;
+      justify-content: center;
+      border-radius: 10rem;
+      opacity: 0.9;
+      margin-right: auto;
+      margin-left: auto; }
+      .flex-item.flex-header img.head-right {
+        transform: rotateY(180deg); }
+      .flex-item.flex-header img.head-left {
+        transform: rotateY(360deg); }
+
+.angry-animate {
+  -webkit-animation: bounce-in 1s cubic-bezier(0.6, 1, 0.7, 0) 0s 1 normal;
+  -moz-animation: bounce-in 1s cubic-bezier(0.6, 1, 0.7, 0) 0s 1 normal;
+  -ms-animation: bounce-in 1s cubic-bezier(0.6, 1, 0.7, 0) 0s 1 normal;
+  animation: bounce-in 1s cubic-bezier(0.6, 1, 0.7, 0) 0s 1 normal; }
+
+@-webkit-keyframes bounce-in {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.3);
+    transform: scale(0.3); }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  70% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+@keyframes bounce-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.3); }
+  50% {
+    opacity: 1;
+    transform: scale(1); }
+  70% {
+    transform: scale(0.9); }
+  100% {
+    transform: scale(1); } }

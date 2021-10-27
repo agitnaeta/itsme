@@ -1,0 +1,25 @@
+{
+  "name": "agit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 src/scss/app.scss style.css",
+    "watch-sass": "node-sass --watch src/scss/app.scss style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agitnaeta/itsme.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/agitnaeta/itsme/issues"
+  },
+  "homepage": "https://github.com/agitnaeta/itsme#readme"
+}
